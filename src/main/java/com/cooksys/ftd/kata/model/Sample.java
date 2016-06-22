@@ -4,7 +4,7 @@ public class Sample implements Comparable<Sample> {
 
 	private Butterpillar butterpillar;
 	private Catterfly catterfly;
-
+	private String species;
 	public Sample() {
 		super();
 	}
@@ -38,6 +38,14 @@ public class Sample implements Comparable<Sample> {
 
 	public void setCatterfly(Catterfly catterfly) {
 		this.catterfly = catterfly;
+	}
+
+	public String getSpecies() {
+		return species;
+	}
+
+	public void setSpecies(String species) {
+		this.species = species;
 	}
 
 	@Override
