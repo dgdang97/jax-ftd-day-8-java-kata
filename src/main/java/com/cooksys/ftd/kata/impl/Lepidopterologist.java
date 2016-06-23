@@ -69,7 +69,7 @@ public class Lepidopterologist implements ILepidopterologist {
 
 	@Override
 	public List<Sample> getSamplesForSpecies(Species species) {
-		List<Sample> samplesList = new ArrayList<>();
+		List<Sample> samplesList = new ArrayList<Sample>();
 		for (Sample s: recordedSamples) {
 			if (s.getSpecies() == species.getName()) {
 				samplesList.add(s);
